@@ -3,7 +3,7 @@
   <div class="container mx-auto px-6 py-4">
     <div class="flex flex-wrap justify-between items-center">
       <div class="w-full md:w-1/3 text-center md:text-left">
-        <p class="text-sm">© 2023 COMPANY. All Rights Reserved.</p>
+        <p class="text-sm">© 2024 COMPANY. All Rights Reserved.</p>
       </div>
       <div class="w-full md:w-1/3 text-center">
         <p class="text-sm">03-6850-8012</p>
@@ -16,6 +16,6 @@
     </div>
   </div>
 </footer>
-
+<?php wp_footer(); ?>
 </body>
 </html>
