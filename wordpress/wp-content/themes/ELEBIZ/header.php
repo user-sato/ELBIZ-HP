@@ -30,10 +30,11 @@ body {
     <div class="flex items-center">
       <div class="hidden md:flex space-x-6">
         <a href="#" class="text-gray-600 hover:text-gray-800">ホーム</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">会社概要</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">サービス内容</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">導入事例</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">お知らせ</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">会社概要</a>
+        <!-- 将来用 -->
+        <!-- <a href="#" class="text-gray-600 hover:text-gray-800">サービス内容</a> -->
+        <!-- <a href="#" class="text-gray-600 hover:text-gray-800">導入事例</a> -->
         <a href="#" class="text-gray-600 hover:text-gray-800">お問い合わせ</a>
       </div>
       <div class="ml-6">

@@ -9,5 +9,6 @@ function my_docment_title_separator($separater){
     return $separater;
 }
 
-
+// アイキャッチ画像を設定する
+add_theme_support( 'post-thumbnails' );
 ?>
