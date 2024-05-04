@@ -163,6 +163,36 @@
   </div>
 </div>
 
+<!-- お知らせ -->
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36">
+  <div class="text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-1">お知らせ</h1>
+      <div class="w-64 h-1 bg-blue-600 mx-auto mb-8"></div>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service Card 1 -->
+      <?php if(have_posts(  )) : ?>
+        <!-- 存在する投稿を取り出して出力 -->
+        <?php while( have_posts(  ) ) : the_post(); ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class( 'news' ) ?>>
+            <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
+                <!-- 画像のサイズをレスポンシブに。アイキャッチ画像を設定。 -->
+                <?php the_post_thumbnail( array(9999,9999) ); ?>
+                <div class="p-6">
+                    <!-- 投稿タイトル -->
+                    <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
+                    <!-- 概要抜粋 -->
+                    <p class="text-gray-600 mb-4"><?php the_excerpt(  ); ?></p>
+                    <!-- ページリンク指定 -->
+                    <a href="<?php the_permalink( ); ?>" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-150 ease-in-out">Learn More →</a>
+                </d　iv>
+            </div>
+          </article>
+        <?php endwhile; ?>
+      <?php endif; ?>
+  </div>
+</div>
+
 <!-- Contact Section -->
 <section class="bg-white py-8">
   <div class="container mx-auto px-6 flex items-center justify-between">

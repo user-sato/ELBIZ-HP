@@ -6,12 +6,12 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <?php
+  /* 外部CSSを読み込む */
   wp_enqueue_style( 'font-awsome', 'https://use.fontawesome.com/releases/v6.5.2/css/all.css' );
+  /* 手持ちのCSSを読み込む */
+  wp_enqueue_style('design', esc_url(home_url('/wp-content/themes/ELEBIZ/css/design.css')));
 ?>
 <style>
-body {
-    font-family: 'Open Sans', sans-serif;
-  }
   .top-banner {
     background-image: url(<?php echo home_url(); ?>/wp-content/themes/ELEBIZ/img/topimage.jpg);
     background-size: cover;
@@ -29,7 +29,7 @@ body {
     <a href=<?php echo home_url(); ?> class="text-xl font-bold text-gray-800"><?php bloginfo('name'); ?></a>
     <div class="flex items-center">
       <div class="hidden md:flex space-x-6">
-        <a href="#" class="text-gray-600 hover:text-gray-800">ホーム</a>
+        <a href="<?php echo home_url(); ?>" class="text-gray-600 hover:text-gray-800">ホーム</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">お知らせ</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">会社概要</a>
         <!-- 将来用 -->
