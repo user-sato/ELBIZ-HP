@@ -134,82 +134,121 @@
 </div>
 
 <!-- 導入事例 -->
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36">
+<!-- <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36">
   <div class="text-center">
       <h1 class="text-4xl font-bold text-gray-800 mb-1">導入事例</h1>
       <div class="w-64 h-1 bg-blue-600 mx-auto mb-8"></div>
   </div>
-  <div class="grid md:grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-3 gap-8"> -->
       <!-- Service Card 1 -->
-      <?php if(have_posts(  )) : ?>
+      <!-- <?php if(have_posts(  )) : ?> -->
         <!-- 存在する投稿を取り出して出力 -->
-        <?php while( have_posts(  ) ) : the_post(); ?>
+        <!-- <?php while( have_posts(  ) ) : the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class( 'news' ) ?>>
-            <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
+            <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out"> -->
                 <!-- 画像のサイズをレスポンシブに。アイキャッチ画像を設定。 -->
-                <?php the_post_thumbnail( array(9999,9999) ); ?>
-                <div class="p-6">
+                <!-- <?php the_post_thumbnail( array(9999,9999) ); ?>
+                <div class="p-6"> -->
                     <!-- 投稿タイトル -->
-                    <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
+                    <!-- <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2> -->
                     <!-- 概要抜粋 -->
-                    <p class="text-gray-600 mb-4"><?php the_excerpt(  ); ?></p>
+                    <!-- <p class="text-gray-600 mb-4"><?php the_excerpt(  ); ?></p> -->
                     <!-- ページリンク指定 -->
-                    <a href="<?php the_permalink( ); ?>" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-150 ease-in-out">Learn More →</a>
-                </div>
+                    <!-- <a href="<?php the_permalink( ); ?>" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-150 ease-in-out">Learn More →</a> -->
+                <!-- </div>
             </div>
           </article>
         <?php endwhile; ?>
       <?php endif; ?>
+  </div>
+</div> -->
+
+<!-- お知らせ -->
+<div id="movenews">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-1">お知らせ</h1>
+        <div class="w-64 h-1 bg-blue-600 mx-auto mb-8"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <?php if(have_posts(  )) : ?>
+          <!-- 存在する投稿を取り出して出力 -->
+          <?php while( have_posts(  ) ) : the_post(); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class( 'news' ) ?>>
+              <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
+                  <!-- 画像のサイズをレスポンシブに。アイキャッチ画像を設定。 -->
+                  <?php the_post_thumbnail( array(9999,9999) ); ?>
+                  <div class="p-6">
+                      <!-- 投稿タイトル -->
+                      <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
+                      <!-- 概要抜粋 -->
+                      <p class="text-gray-600 mb-4"><?php the_excerpt(  ); ?></p>
+                      <!-- ページリンク指定 -->
+                      <a href="<?php the_permalink( ); ?>" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-150 ease-in-out">Learn More →</a>
+                  </d　iv>
+              </div>
+            </article>
+          <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
   </div>
 </div>
 
-<!-- お知らせ -->
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36">
-  <div class="text-center">
-      <h1 class="text-4xl font-bold text-gray-800 mb-1">お知らせ</h1>
-      <div class="w-64 h-1 bg-blue-600 mx-auto mb-8"></div>
-  </div>
-  <div class="grid md:grid-cols-3 gap-8">
-      <!-- Service Card 1 -->
-      <?php if(have_posts(  )) : ?>
-        <!-- 存在する投稿を取り出して出力 -->
-        <?php while( have_posts(  ) ) : the_post(); ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class( 'news' ) ?>>
-            <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <!-- 画像のサイズをレスポンシブに。アイキャッチ画像を設定。 -->
-                <?php the_post_thumbnail( array(9999,9999) ); ?>
-                <div class="p-6">
-                    <!-- 投稿タイトル -->
-                    <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
-                    <!-- 概要抜粋 -->
-                    <p class="text-gray-600 mb-4"><?php the_excerpt(  ); ?></p>
-                    <!-- ページリンク指定 -->
-                    <a href="<?php the_permalink( ); ?>" class="text-blue-500 font-semibold hover:text-blue-700 transition duration-150 ease-in-out">Learn More →</a>
-                </d　iv>
-            </div>
-          </article>
-        <?php endwhile; ?>
-      <?php endif; ?>
+<!-- 会社概要 -->
+<div id="aboutcompany">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-1">会社概要</h1>
+        <div class="w-64 h-1 bg-blue-600 mx-auto mb-8"></div>
+    </div>
+    <div class="flex items-center justify-center">
+      <div class="bg-white shadow-lg rounded-lg p-32 w-full">
+          <div class="grid grid-cols-2 gap-4 text-xl">
+              <div class="font-bold">会社名</div>
+              <div>ELEBIZ</div>
+
+              <div class="font-bold">住所</div>
+              <div>T340-0824<br>東京都品川区南品川1-19-1エンパイアビル 102号室</div>
+
+              <div class="font-bold">電話番号</div>
+              <div>080-6760-4936</div>
+
+              <div class="font-bold">設立者</div>
+              <div>水嶋 雄太</div>
+
+              <div class="font-bold">設立</div>
+              <div>2024年3月</div>
+
+              <div class="font-bold">事業内容</div>
+              <div>創業支援<br>代理店販売業<br>商品企画<br>営業コンサルティング<br>イベント運用代行<br>SNS運用代行</div>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Contact Section -->
-<section class="bg-white py-8">
-  <div class="container mx-auto px-6 flex items-center justify-between">
-    <div class="w-1/2">
-      <h2 class="text-gray-800 text-3xl font-bold">CONTACT</h2>
-      <p class="text-gray-600 mt-4">お問い合わせはこちらからどうぞ。専門のスタッフが丁寧に対応いたします。</p>
-      <p class="mt-8">
-        <a href="tel:0368508012" class="text-blue-600 text-lg font-semibold">03-6850-8012</a>
-      </p>
-      <p class="mt-4">
-        <a href="#" class="text-indigo-600 hover:text-indigo-800">お問い合わせフォーム</a>
-      </p>
+  <div id="query">
+  <section class="bg-white py-8">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <div class="w-1/2">
+        <h2 class="text-gray-800 text-3xl font-bold">CONTACT</h2>
+        <p class="text-gray-600 mt-4">お問い合わせはこちらからどうぞ。専門のスタッフが丁寧に対応いたします。</p>
+        <p class="mt-4">
+          電話番号：
+          <a href="tel:080-6760-4936" class="text-blue-600 text-lg font-semibold">080-6760-4936</a>
+        </p>
+        <!-- お問い合わせ　-将来用 -->
+        <!-- <p class="mt-4">
+          <a href="#" class="text-indigo-600 hover:text-indigo-800">お問い合わせフォーム</a>
+        </p> -->
+      </div>
+      <div class="w-1/2">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/ELEBIZ/img/contact.jpg" alt="Contact" class="rounded shadow-lg">
+      </div>
     </div>
-    <div class="w-1/2">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/ELEBIZ/img/contact.jpg" alt="Contact" class="rounded shadow-lg">
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <?php get_footer(); ?>

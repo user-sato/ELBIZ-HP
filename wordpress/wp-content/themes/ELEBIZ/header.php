@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <?php
   /* 外部CSSを読み込む */
   wp_enqueue_style( 'font-awsome', 'https://use.fontawesome.com/releases/v6.5.2/css/all.css' );
@@ -26,19 +27,22 @@
 <!-- Header -->
 <header class="bg-white shadow">
   <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-    <a href=<?php echo home_url(); ?> class="text-xl font-bold text-gray-800"><?php bloginfo('name'); ?></a>
+    <!-- <a href=<?php echo home_url(); ?> class="text-xl font-bold text-gray-800"><?php bloginfo('name'); ?></a> -->
+    <a href=<?php echo home_url(); ?> class="text-xl font-bold text-gray-800">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ELEBIZ_logo_top.png" alt="Office">
+    </a>
     <div class="flex items-center">
       <div class="hidden md:flex space-x-6">
         <a href="<?php echo home_url(); ?>" class="text-gray-600 hover:text-gray-800">ホーム</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">お知らせ</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">会社概要</a>
+        <a href="#movenews" class="text-gray-600 hover:text-gray-800">お知らせ</a>
+        <a href="#aboutcompany" class="text-gray-600 hover:text-gray-800">会社概要</a>
         <!-- 将来用 -->
         <!-- <a href="#" class="text-gray-600 hover:text-gray-800">サービス内容</a> -->
         <!-- <a href="#" class="text-gray-600 hover:text-gray-800">導入事例</a> -->
-        <a href="#" class="text-gray-600 hover:text-gray-800">お問い合わせ</a>
+        <a href="#query" class="text-gray-600 hover:text-gray-800">お問い合わせ</a>
       </div>
       <div class="ml-6">
-        <a href="tel:0368508012" class="text-blue-600 font-semibold">03-6850-8012</a>
+        <a href="tel:080-6760-4936" class="text-blue-600 font-semibold">080-6760-4936</a>
       </div>
     </div>
   </nav>
@@ -54,7 +58,7 @@
       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">お問い合わせ</button>
     </div>
     <div class="w-1/2">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_0070.JPG" alt="Office" class="rounded shadow-lg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ELEBIZ_logo2_top_banner.png" alt="Office" class="rounded shadow-lg">
     </div>
   </div>
 </section>

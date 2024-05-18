@@ -3,8 +3,8 @@
 <h2 class="pageTitle">お知らせ</h2>
 
     <div class="flex h-screen">
-        <!-- Sidebar -->
-        <div class="sidebar w-64">
+        <!-- サイドバー　将来用 -->
+        <!-- <div class="sidebar w-64">
             <div class="sidebar-innder">
                 <div class="p-5 text-xl font-semibold border-b">カテゴリ 一覧</div>
                 <a href="#" class="sidebar-link">お知らせ</a>
@@ -15,7 +15,7 @@
                 <a href="#" class="sidebar-link">2019年4月</a>
                 <a href="#" class="sidebar-link">2019年5月</a>
             </div>
-        </div>
+        </div> -->
 
         <!-- Main content -->
         <div class="flex-1 p-10">
